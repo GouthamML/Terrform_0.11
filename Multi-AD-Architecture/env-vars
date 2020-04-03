@@ -1,0 +1,21 @@
+#!/bin/bash
+#LOG LEVEL
+export TF_LOG=INFO
+export TF_LOG_PATH=~/.projects/oci_partner/Oracle_EBS/Multi-AD-Architecture/multi-ad.log
+
+#GLOBAL
+export TF_VAR_tenancy_ocid="ocid1.tenancy.oc1..aaaaaaaapf32iocmevidwi4ujtrnfvq456dp4elubzvw564v6lh2sby24uua"
+export TF_VAR_user_ocid="ocid1.user.oc1..aaaaaaaapw62xitiqdbsmjnv7mn4hxbphj5fxmz66httbs5pfhsxfmgo5cnq"
+export TF_VAR_compartment_ocid="ocid1.compartment.oc1..aaaaaaaa4cmhrwn76aralhu2g7dfqhmv4ygyzfg6uitdz6muiaofwrpn74yq"
+export TF_VAR_fingerprint="e2:f6:5a:53:1a:f4:77:1a:f8:fd:47:e3:61:40:38:46"
+export TF_VAR_private_key_path="~/.oci/oci_api_key_terra.pem"
+export TF_VAR_region="us-ashburn-1"
+
+
+#SSH Keys for apps and db
+export TF_VAR_ssh_public_key=~/.oci/ssh_keys/key.pub
+export TF_VAR_ssh_private_key=~/.oci/ssh_keys/key
+
+### Public/private keys used on the bastion instance
+export TF_VAR_bastion_ssh_public_key=~/.ssh/id_rsa.pub
+export TF_VAR_bastion_ssh_private_key=~/.ssh/id_rsa
