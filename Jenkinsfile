@@ -40,11 +40,11 @@ pipeline {
       }
     }
 
-    stage('TF Apply') {
+    /*stage('TF Apply') {
       steps {
           sh 'terraform apply -auto-approve'
       }
-    }
+    } */
 
   } 
 
