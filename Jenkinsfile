@@ -13,7 +13,16 @@ pipeline {
         
       }
     }
-
+    
+    stage('Checkout') {
+      steps {
+        dir("Multi-AD-Architecture"){
+          sh 'pwd'
+        }
+        
+      }
+    }
+    
     stage('TF Plan') {
       steps {
           
