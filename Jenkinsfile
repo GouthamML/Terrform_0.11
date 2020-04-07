@@ -25,9 +25,10 @@ pipeline {
     
     stage('TF Plan') {
       steps {
-          
+          dir("Multi-AD-Architecture"){
           sh 'terraform init'
           sh 'terraform plan'
+          }
       }      
     }
 
