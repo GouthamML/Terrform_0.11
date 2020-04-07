@@ -14,7 +14,7 @@ pipeline {
       }
     }
     
-    stage('Checkout') {
+    stage('change_dir') {
       steps {
         dir("Multi-AD-Architecture"){
           sh 'pwd'
