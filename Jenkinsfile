@@ -18,6 +18,9 @@ pipeline {
       steps {
         dir("Multi-AD-Architecture"){
           sh 'pwd'
+          sh 'whoami'
+          sh 'sudo ls /var/terra_keys/dotssh/'
+
         }
         
       }
