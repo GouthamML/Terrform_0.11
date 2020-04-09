@@ -19,6 +19,7 @@ pipeline {
         dir("Multi-AD-Architecture"){
           sh 'pwd'
           sh 'whoami'
+          sh 'source env-vars'
           sh 'ls /var/terra_keys/dotssh/'
 
         }
