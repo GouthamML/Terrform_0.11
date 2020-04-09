@@ -2,9 +2,9 @@ pipeline {
 
   agent any
    
-  '''environment {
+  /*environment {
     SVC_ACCOUNT_KEY = credentials('terraform-ge-auth')
-  }'''
+  } */
   stages {
 
    stage('Checkout') {
