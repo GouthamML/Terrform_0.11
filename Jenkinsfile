@@ -2,9 +2,9 @@ pipeline {
 
   agent any
    
-  /*environment {
+  environment {
     SVC_ACCOUNT_KEY = credentials('terraform-ge-auth')
-  } */
+  }
   stages {
 
    stage('Checkout') {
@@ -19,7 +19,7 @@ pipeline {
         dir("Multi-AD-Architecture"){
           sh 'pwd'
           sh 'whoami'
-      
+          sh 'env'
           sh 'ls /var/terra_keys/dotssh/'
 
         }
