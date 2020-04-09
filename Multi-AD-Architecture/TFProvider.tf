@@ -13,8 +13,8 @@ ssh_public_key= "/var/terra_keys/ssh_keys/key.pub"
 ssh_private_key= "/var/terra_keys/ssh_keys/key"
 
 ### Public/private keys used on the bastion instance
-bastion_ssh_public_key= "/var/terra_keys/ssh_keys/key.pub"
-bastion_ssh_private_key= "/var/terra_keys/ssh_keys/key"
+bastion_ssh_public_key= "/var/terra_keys/dotssh/id_rsa.pub"
+bastion_ssh_private_key= "$(sudo cat /var/terra_keys/dotssh/id_rsa)"
 
    //version = "=3.30.0"
 }
